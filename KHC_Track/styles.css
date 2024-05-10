@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    background-color: red;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #155ea7; /* Bleu foncé */
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.elements {
+    padding: 20px;
+}
+
+footer {
+    background-color: #155ea7;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0; /* Le footer sera fixé en bas */
+    width: 100%; /* Le footer occupera toute la largeur */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    height: 100vh; /* Pour centrer verticalement */
+}
+
+.login-container form {
+    width: 200px; /* Largeur du formulaire */
+    padding: 20px; /* Espace autour du formulaire */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
+.login-container form label {
+    display: block; /* Permet de régler la largeur des éléments label */
+    text-align: center; /* Centre le texte */
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    width: 100%; /* Fait en sorte que les champs de saisie remplissent la largeur du formulaire */
+    margin-bottom: 10px; /* Espace entre les champs de saisie */
+}
+
+.login-container form input[type="submit"] {
+    width: 100%; /* Fait en sorte que le bouton de soumission remplisse la largeur du formulaire */
+}
+
+.login-container h2 {
+    margin-top: 0; /* Pour placer le titre en haut du formulaire */
+}
+
+h1, h2, p {
+    margin: 0; /* Supprimer les marges par défaut des éléments */
+}
+
+/* Style pour la carte */
+#map { height: 500px;
+    width: auto; 
+    
+}
+
+/* Style pour le titre aligné au centre */
+h2 {
+    text-align: center;
+}
+
+/* Style pour la barre de navigation */
+ul.topnav {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4CAF50;
+    width: 70%;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #3e8e41;}
+
+ul.topnav li a.active {background-color: #333;}
+
+ul.topnav li.right {float: right;}
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
